@@ -636,4 +636,27 @@ h3 {
   opacity: 0.3;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.favoritos {
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+.favoritos__titulo {
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .favoritos__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .favorito {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 2rem;
+  }
+}
 /*# sourceMappingURL=app.css.map */

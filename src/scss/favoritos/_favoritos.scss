@@ -1,0 +1,17 @@
+
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.favoritos {
+    background-color: v.$grisClaro;
+    padding: v.$separacion 0;
+    &__titulo{
+        color: v.$secundario;
+    }
+    @include m.tablet { 
+        &__grid {
+            @include m.grid(2,v.$separacion);
+        }
+    }
+  
+}
