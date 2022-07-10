@@ -652,11 +652,111 @@ h3 {
   }
 }
 
+.favorito {
+  background-color: #FFFFFF;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 2.5rem -0.7rem #657177;
+}
+.favorito:last-of-type {
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
   .favorito {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .favorito__grid {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
     gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .favorito__grid {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+.favorito__imagen {
+  max-width: 20rem;
+  margin: 0 auto 2rem auto;
+}
+.favorito__descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .favorito__descripcion {
+    align-items: flex-start;
+  }
+}
+.favorito__descripcion--titulo {
+  color: #e8505b;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+}
+.favorito__descripcion--texto {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #455a64;
+  margin: 1rem 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .favorito__descripcion--texto {
+    text-align: left;
+  }
+}
+
+.repartidores {
+  padding: 5rem 0;
+}
+.repartidores__titulo {
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .repartidores__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.repartidores__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.repartidores__texto {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  color: #455a64;
+}
+.repartidores__boton {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.repartidores__boton:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .repartidores__boton {
+    width: auto;
   }
 }
 /*# sourceMappingURL=app.css.map */
